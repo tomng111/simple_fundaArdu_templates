@@ -18,7 +18,7 @@ void loop() {
   digitalWrite(led4, LOW); 
   int butState1 = digitalRead(but1);
   int butState2 = digitalRead(but2);
-  if(butState1 == 0){ // PULL-DOWN
+  if(butState1 == 0){ // PULL-UP
     digitalWrite(led1, HIGH);
     digitalWrite(led2, HIGH);
   }
@@ -26,7 +26,7 @@ void loop() {
     digitalWrite(led1, LOW);
     digitalWrite(led2, LOW);
   }
-  if(butState2 == 1){ // PULL-UP
+  if(butState2 == 1){ // PULL-DOWN
     digitalWrite(led3, HIGH);
     digitalWrite(led4, HIGH);
   }
